@@ -2,7 +2,7 @@ import express from "express";
 import Hotel from "../models/Hotel.js";
 import {
   createHotel,
-  dleeteHotel,
+  deleteHotel,
   getHotel,
   getHotels,
   updateHotel,
@@ -18,7 +18,7 @@ router.post("/", createHotel);
 router.put("/:id", updateHotel);
 
 //DELETE
-router.delete("/:id", dleeteHotel);
+router.delete("/:id", deleteHotel);
 
 //GET
 router.get("/:id", getHotel);
